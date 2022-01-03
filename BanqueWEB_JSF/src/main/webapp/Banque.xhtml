@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html" 
+	  xmlns:f="http://java.sun.com/jsf/core">
+	<h:head>
+		<title>Banque</title>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+	</h:head>
+	<h:body>
+		<div>
+			<h:form>
+				<h:panelGrid columns="2">
+					<h:outputText value="Code 1 : "></h:outputText>
+					<h:inputText value="#{banqueMB.code1}"></h:inputText>
+					<h:outputText value="Code 2 : "></h:outputText>
+					<h:inputText value="#{banqueMB.code2}"></h:inputText>
+					<h:outputText value="Montant : "></h:outputText>
+					<h:inputText value="#{banqueMB.montant}"></h:inputText>
+					<h:commandButton action="#{banqueMB.verser}" value="Verser"></h:commandButton>
+					<h:commandButton action="#{banqueMB.retirer}" value="Retirer"></h:commandButton>
+					<h:commandButton action="#{banqueMB.virement}" value="virement"></h:commandButton>
+					<h:commandButton action="#{banqueMB.ajouter}" value="Ajouter"></h:commandButton>
+				</h:panelGrid>
+			</h:form>
+		</div>
+		<div>
+			<h:dataTable value="#{banqueMB.listComptes}" var="cp" class="table_show">
+				<h:column>
+					<f:facet name="header">
+						<h:outputText value="Code"></h:outputText>
+					</f:facet>
+					<h:outputText value="#{cp.code}"></h:outputText>
+				</h:column>
+				<h:column>
+					<f:facet name="header">
+						<h:outputText value="Solde"></h:outputText>
+					</f:facet>
+					<h:outputText value="#{cp.solde}"></h:outputText>
+				</h:column>
+				<h:column>
+					<f:facet name="header">
+						<h:outputText value="Date de Creation"></h:outputText>
+					</f:facet>
+					<h:outputText value="#{cp.dateCreation}"></h:outputText>
+				</h:column>
+				<h:column>
+					<f:facet name="header">
+						<h:outputText value="Active"></h:outputText>
+					</f:facet>
+					<h:outputText value="#{cp.active}"></h:outputText>
+				</h:column>
+			</h:dataTable>
+		</div>
+	</h:body>
+</html>
