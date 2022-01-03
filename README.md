@@ -20,3 +20,9 @@ Les différentes catégories de budget sont :
 
 L’architecture de notre projet est la suivante :
 <p align="center"><img src="/photos/archi_jee.png" width="1000px" height="800px"></p>
+
+<p>
+  Contributeurs :
+  - Omar DAKKAK
+  - Ombeline DOUEZ
+</p>
