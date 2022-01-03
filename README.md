@@ -19,4 +19,4 @@ Les différentes catégories de budget sont :
 - Ces catégories peuvent être modifiées.
 
 L’architecture de notre projet est la suivante :
-<p align="center"><img src="/photos/archi_jee.png" width="1000px" height="875px"></p>
+<p align="center"><img src="/photos/archi_jee.png" width="1000px" height="800px"></p>
