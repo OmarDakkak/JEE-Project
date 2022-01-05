@@ -2,7 +2,7 @@
 
 Le but de notre projet est de créer un site internet permettant de gérer les différents budgets d’une entreprise. 
 
-Il est possible d’ajouter de nouveaux budgets, de faire des virements entre les différents comptes budgétaires, de réaliser des virements entre comptes, des versements et des retraits. Les différents mouvements réalisés par l’administrateur seront pris en compte en temps réel. 
+Il est possible d’ajouter de nouveaux budgets, de faire des virements entre les différents comptes budgétaires, de réaliser des virements entre comptes de budgets, des versements et des retraits. Les différents mouvements réalisés par l’administrateur seront pris en compte en temps réel. 
 
 Les différentes catégories de budget sont : 
 - Informatique/Logiciel
